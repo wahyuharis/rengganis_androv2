@@ -19,11 +19,11 @@ function penjualan_row(id_penjualan, kode_transaksi, tanggal, nama_outlet, atas_
     self.detail_click = function () {
         var id_penjualan = self.id_penjualan();
         localStorage.setItem('id_penjualan', id_penjualan);
-        
+
         $.get('page/history_transaksi/detail.html', function (data) {
             $('#content').html(data);
         });
-        
+
     }
 }
 
@@ -118,6 +118,7 @@ function History_transaksi_model() {
 
     self.get_history_transaksi_list();
 }
+
 
 $('#history_transaksi').ready(function () {
     ko.applyBindings(new History_transaksi_model(), document.getElementById("history_transaksi"));

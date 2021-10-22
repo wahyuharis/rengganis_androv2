@@ -412,12 +412,12 @@ $('#daftar_pesanan').ready(function () {
         });
     });
 
-    document.addEventListener("backbutton", onBackKeyDown, false);
-    function onBackKeyDown() {
-        $.get('page/pesan/pesan.html', function (data) {
-            $('#content').html(data);
-        });
-    }
+//    document.addEventListener("backbutton", onBackKeyDown, false);
+//    function onBackKeyDown() {
+//        $.get('page/pesan/pesan.html', function (data) {
+//            $('#content').html(data);
+//        });
+//    }
 
     $('#batal').click(function () {
 
@@ -502,8 +502,6 @@ $('#daftar_pesanan').ready(function () {
     });
 
 });
-
-
 
 function is_login() {
     var token = localStorage.getItem('token');

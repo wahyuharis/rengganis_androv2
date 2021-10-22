@@ -213,12 +213,12 @@ $(document).ready(function () {
         });
     });
 
-    document.addEventListener("backbutton", onBackKeyDown, false);
-    function onBackKeyDown() {
-        $.get('page/history_transaksi/history_transaksi.html', function (data) {
-            $('#content').html(data);
-        });
-    }
+//    document.addEventListener("backbutton", onBackKeyDown, false);
+//    function onBackKeyDown() {
+//        $.get('page/history_transaksi/history_transaksi.html', function (data) {
+//            $('#content').html(data);
+//        });
+//    }
 
 
     function get_penjualan() {

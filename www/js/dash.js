@@ -6,6 +6,7 @@ document.addEventListener('deviceready', onDeviceReady, false);
 //});
 
 
+
 function onDeviceReady() {
     init_localstorage();
 

@@ -213,13 +213,6 @@ $(document).ready(function () {
         });
     });
 
-    document.addEventListener("backbutton", onBackKeyDown, false);
-    function onBackKeyDown() {
-        $.get('page/pesan/pesan.html', function (data) {
-            $('#content').html(data);
-        });
-    }
-
 
     function get_penjualan() {
         var id_penjualan = localStorage.getItem('id_penjualan');

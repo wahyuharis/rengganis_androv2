@@ -16,21 +16,21 @@ document.addEventListener('deviceready', onDeviceReady, false);
 
 function onDeviceReady() {
 
-    $.ajax({
-        url: 'https://belmontransport.com/kominfo/index.php',
-        type: 'get',
-        crossDomain: true,
-        data: {
-            'username': 'kasir',
-            'password': 'kasir',
-        },
-        success: function (result) {
-            alert(JSON.stringify(result));
-        },
-        error(err) {
-            alert(JSON.stringify(err));
-        }
-    });
+//    $.ajax({
+//        url: 'https://belmontransport.com/kominfo/index.php',
+//        type: 'get',
+//        crossDomain: true,
+//        data: {
+//            'username': 'kasir',
+//            'password': 'kasir',
+//        },
+//        success: function (result) {
+//            alert(JSON.stringify(result));
+//        },
+//        error(err) {
+//            alert(JSON.stringify(err));
+//        }
+//    });
 
     var username = '';
     var password = '';
